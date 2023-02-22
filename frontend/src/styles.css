@@ -108,7 +108,7 @@ nav.shift ul li a:hover:after {
 
 
 /* INTRO */
-.intro {
+div.intro {
   background: no-repeat rgba(0, 0, 0, .35) url("../public/mighty_poro.png");
   background-blend-mode: darken;
   background-size: cover;
@@ -120,14 +120,14 @@ nav.shift ul li a:hover:after {
   justify-content: center;
 }
 
-.intro h1 {
+div.intro h1 {
   font-size: 5rem;
   color: #F1C40F;
   -webkit-text-stroke: 1px black;
   font-weight: 800;
 }
 
-.intro p {
+div.intro p {
   font-size: 3rem;
   color: #F1C40F;
   -webkit-text-stroke: 1px black;
@@ -156,10 +156,10 @@ div.about h1 {
 }
 
 div.about p {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #F1C40F;
   -webkit-text-stroke: 1px black;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 
@@ -177,7 +177,7 @@ div.standings {
 }
 
 div.standings h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #F1C40F;
   -webkit-text-stroke: 1px black;
   font-weight: 800;
@@ -196,3 +196,80 @@ div.schedule {
   align-items: center;
   justify-content: center;
 }
+
+
+
+div.ranking {
+  posiiton: relative;
+  width: 70%;
+}
+
+div.ranking .rank {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    background: rgba(50, 50, 50, .5);
+    border-top: 2px solid;
+    border-color: black;
+    -webkit-text-stroke: 0.5px black;
+}
+
+div.ranking .rank:last-child {
+  border-bottom: 2px solid #252c32;
+  border-color: black;
+}
+
+div.ranking .rank .ordinal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-style: italic;
+  padding: 1rem;
+  margin: 1rem;
+  padding-left: 3rem;
+}
+
+div.ranking .rank .team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  padding-right: 3rem;
+}
+
+div.ranking .rank .team .team-name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+div.ranking .rank .team .record{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/*div.ranking .rank .team .team-logo {
+  display: flex;
+  justify-content: center;
+  margin-right: 16px
+}*/

@@ -4,18 +4,6 @@ export default function Standings() {
 
   const [teams, setTeams] = useState([{}])
 
-  // function getData() {
-  //   axios({
-  //     method: "GET",
-  //     url:"/get_teams"
-  //   })
-  //   .then((response) => {
-  //     const res = response.data
-  //     setTeams(({
-  //       team1: res.team1}))
-  //   })
-  // }
-
   useEffect(() => {
     fetch("/get_teams").then(
       res => res.json()
@@ -28,23 +16,25 @@ export default function Standings() {
 
 	return (
     <div className="standings">
-      <h1> Poro League Standings </h1>
-      <table>
-        <tr>
-          <th> Place </th>
-          <th> Team </th>
-          <th> Score </th>
-        </tr>
-        {
-          Object.keys(teams).map((team, i) => (
-            <tr key={i}> 
-              <th> {i+1} </th>
-              <th> {teams[team].name} </th>
-              <th> {teams[team].win}W-{teams[team].loss}L </th>
-            </tr>
+      <h1> Standings </h1>
+      <div className="ranking">
+        {Object.keys(teams).map((team, i) => (
+            <a className="rank" key={i}>
+              <div className="ordinal">
+                {i+1}
+              </div>
+              <div className="team">
+                <div className="team-name">
+                  {teams[team].name}
+                </div>
+                <div className="record">
+                  {teams[team].win}W-{teams[team].loss}L
+                </div>
+              </div> 
+            </a>
           ))
         }
-      </table>
+      </div>
     </div>
   );
 }
