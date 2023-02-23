@@ -246,7 +246,7 @@ div.schedule {
 
 div.ranking {
   posiiton: relative;
-  width: calc(7rem + 70vw);
+  width: calc(10rem + 50vw);
 }
 
 div.ranking .rank {
@@ -255,7 +255,7 @@ div.ranking .rank {
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    font-size: calc(0.5rem + 0.8vw);
+    font-size: calc(1rem + 0.2vw);
     font-weight: 800;
     color: white;
     background: rgba(50, 50, 50, .5);
@@ -276,8 +276,8 @@ div.ranking .rank .ordinal {
   height: 100%;
   width: 100%;
   font-style: italic;
-  padding-left: 2rem;
-  padding-right: calc(1rem + 10vw);
+  padding-left: 1rem;
+  padding-right: calc(1rem + 5vw);
 }
 
 div.ranking .rank .team {
@@ -292,8 +292,8 @@ div.ranking .rank .team {
 }
 
 div.ranking .rank .team .team-logo img {
-  max-width: calc(3rem + 5vw);
-  min-width: calc(3rem + 5vw);
+  max-width: calc(3rem + 3vw);
+  min-width: calc(3rem + 3vw);
   border-radius: 30%;
   justify-content: center;
   padding-inline: 0.5rem;
@@ -317,9 +317,10 @@ div.ranking .rank .record{
   justify-content: left;
   height: 100%;
   width: 100%;
-  min-width: calc(10rem + 5vw);
-  padding-inline: calc(0.1rem + 7vw);
-  margin-right: 1rem;
+  min-width: calc(2rem + 5vw);
+  padding-left: calc(1rem + 5vw);
+  padding-right: 1rem;
+/*  margin-right: 1rem;*/
 }
 
 
