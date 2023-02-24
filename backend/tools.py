@@ -2,7 +2,7 @@ import logging
 import csv
 from glob import glob
 
-DB_FILE = "*/standings.csv"
+DB_FILE = "standings.csv"
 
 def read_db():
 	files = glob(DB_FILE, recursive=True)
