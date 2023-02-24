@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const logoMap = {
   "Desire 1": "logo-desire-1.png",
